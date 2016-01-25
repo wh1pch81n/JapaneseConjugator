@@ -9,7 +9,37 @@
 import XCTest
 @testable import JapaneseConjugator
 
+func == <T:Equatable> (tuple1:(T,T),tuple2:(T,T)) -> Bool
+{
+	return (tuple1.0 == tuple2.0) && (tuple1.1 == tuple2.1)
+}
+
 class JapaneseConjugatorTests: XCTestCase {
+	
+	var testCases = [
+		JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true) : [
+			(
+				conjugation: JapaneseVerb.plain_Form,
+				syllabaries: ("話す","はなす")
+			), (
+				conjugation: JapaneseVerb.plain_LetsForm,
+				syllabaries: ("話そう", "はなそう")
+			), (
+				conjugation: JapaneseVerb.te_Form,
+				syllabaries:("話して", "はなして")
+			), (
+				conjugation: JapaneseVerb.ta_Form,
+				syllabaries: ("話した", "はなした")
+			),
+//			(
+//				JapaneseVerb.polite_Form,
+//				("話します", "はなします")
+//			), (
+//				JapaneseVerb.polite_NegativeForm,
+//				("話しません", "はなしません")
+//			)
+		]
+	]
 	
     override func setUp() {
         super.setUp()
@@ -20,46 +50,14 @@ class JapaneseConjugatorTests: XCTestCase {
 		super.tearDown()
 	}
 	
-	func test_godanVerbPlain() {
-		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-		XCTAssertEqual(i.plain_Form().kanji, i.kanji)
-		XCTAssertEqual(i.plain_Form().furigana, i.furigana)
+	func test_testCases() {
+		testCases.forEach { (input, arr_value) in
+			arr_value.enumerate().forEach {
+				let (conjugation_fn, answer_syl) = $0.element
+				let gen = conjugation_fn(input)()
+				XCTAssert(gen == answer_syl, "Failed on \($0.index) expected \(answer_syl), got \(gen)")
+			}
+		}
 	}
-	
-	func test_godanVerbPlainNegative() {
-		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-		XCTAssertEqual(i.plain_NegativeForm().kanji, "話さない")
-		XCTAssertEqual(i.plain_NegativeForm().furigana, "はなさない")
-	}
-	
-	func test_godanVerbPlainLets() {
-		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-		XCTAssertEqual(i.plain_LetsForm().kanji, "話そう")
-		XCTAssertEqual(i.plain_LetsForm().furigana, "はなそう")
-	}
-	
-	func test_godanVerbPlainTe() {
-		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-		XCTAssertEqual(i.te_Form().kanji, "話して")
-		XCTAssertEqual(i.te_Form().furigana, "はなして")
-	}
-	
-	func test_godanVerbPlainPastTense() {
-		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-		XCTAssertEqual(i.ta_Form().kanji, "話した")
-		XCTAssertEqual(i.ta_Form().furigana, "はなした")
-	}
-	
-//	func test_godanVerbPolite() {
-//		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-//		XCTAssertEqual(i.polite_Form().kanji, "話します")
-//		XCTAssertEqual(i.polite_Form().furigana, "はなします")
-//	}
-//
-//	func test_godanVerbPoliteNegative() {
-//		var i = JapaneseVerb(kanji: "話す", furigana: "はなす", isGodan: true)
-//		XCTAssertEqual(i.polite_NegativeForm().kanji, "話しません")
-//		XCTAssertEqual(i.polite_NegativeForm().furigana, "はなしません")
-//	}
 	
 }

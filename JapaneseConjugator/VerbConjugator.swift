@@ -47,10 +47,16 @@ let table = [
 	
 ]
 
-struct JapaneseVerb: Verb, Conjugator {
+func ==(lhs: JapaneseVerb, rhs: JapaneseVerb) -> Bool {
+	return lhs.kanji == rhs.kanji
+}
+
+struct JapaneseVerb: Verb, Conjugator, Hashable {
 	let kanji: String
 	let furigana: String
 	let isGodan: Bool
+	
+	var hashValue: Int { return kanji.hashValue }
 	
 	func splitLast(str: String) -> (String, String) {
 		let k = str as NSString
