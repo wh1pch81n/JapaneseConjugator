@@ -176,46 +176,46 @@ struct JapaneseVerb: Verb, Conjugator, Hashable {
 	}
 	
 	/// below not done yet
-//	func polite_Form() -> Syllabaries {
-//		if (isGodan) {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		} else {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		}
-//	}
-//	
-//	func polite_NegativeForm() -> Syllabaries {
-//		if (isGodan) {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		} else {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		}
-//	}
-//	
-//	func polite_LetsForm() -> Syllabaries {
-//		if (isGodan) {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		} else {
-//			return (
-//				kanji,
-//				furigana
-//			)
-//		}
-//	}
+	func polite_Form() -> Syllabaries {
+		if (isGodan) {
+			return (
+				kanji,
+				furigana
+			)
+		} else {
+			return (
+				kanji,
+				furigana
+			)
+		}
+	}
+	
+	func polite_NegativeForm() -> Syllabaries {
+		if (isGodan) {
+			return (
+				kanji,
+				furigana
+			)
+		} else {
+			return (
+				kanji,
+				furigana
+			)
+		}
+	}
+	
+	func polite_LetsForm() -> Syllabaries {
+		if (isGodan) {
+			return (
+				kanji,
+				furigana
+			)
+		} else {
+			return (
+				kanji,
+				furigana
+			)
+		}
+	}
 
 }
