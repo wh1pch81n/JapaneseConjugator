@@ -152,7 +152,7 @@ class JapaneseConjugatorTests: XCTestCase {
 				conjugation: JapaneseVerb.polite_LetsForm,
 				syllabaries: ("遊びましょう", "あそびましょう")
 			)
-		],		
+		],
 		JapaneseVerb(kanji: "飲む", furigana: "のむ", isGodan: true) : [
 			(
 				conjugation: JapaneseVerb.plain_Form,
