@@ -110,7 +110,7 @@ class JapaneseConjugatorTests: XCTestCase {
 				syllabaries: ("売ろう", "うろう")
 			), (
 				conjugation: JapaneseVerb.te_Form,
-				syllabaries:("売って", "うって")
+				syllabaries: ("売って", "うって")
 			), (
 				conjugation: JapaneseVerb.ta_Form,
 				syllabaries: ("売った", "うった")
@@ -399,10 +399,10 @@ class JapaneseConjugatorTests: XCTestCase {
 	
 	func test_testCases() {
 		testCases.forEach { (input, arr_value) in
-			arr_value.enumerate().forEach {
+			arr_value.enumerated().forEach {
 				let (conjugation_fn, answer_syl) = $0.element
 				let gen = conjugation_fn(input)()
-				XCTAssert(gen == answer_syl, "Failed on \($0.index) expected \(answer_syl), got \(gen)")
+				XCTAssert(gen == answer_syl, "Failed on \($0.offset) expected \(answer_syl), got \(gen)")
 			}
 		}
 	}

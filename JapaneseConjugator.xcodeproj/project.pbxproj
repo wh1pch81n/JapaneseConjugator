@@ -15,6 +15,7 @@
 		2FA3D2121C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */; };
 		2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
 		2FA3D21E1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
+		7FC1B5461D9D755E0080F05D /* KanaChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1B5451D9D755E0080F05D /* KanaChart.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseConjugatorTests.swift; sourceTree = "<group>"; };
 		2FA3D2131C4DB8BC00140AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbConjugator.swift; sourceTree = "<group>"; };
+		7FC1B5451D9D755E0080F05D /* KanaChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KanaChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2FA3D1FC1C4DB8BC00140AE8 /* AppDelegate.swift */,
 				2FA3D1FE1C4DB8BC00140AE8 /* ViewController.swift */,
 				2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */,
+				7FC1B5451D9D755E0080F05D /* KanaChart.plist */,
 				2FA3D2001C4DB8BC00140AE8 /* Main.storyboard */,
 				2FA3D2031C4DB8BC00140AE8 /* Assets.xcassets */,
 				2FA3D2051C4DB8BC00140AE8 /* LaunchScreen.storyboard */,
@@ -150,9 +153,11 @@
 				TargetAttributes = {
 					2FA3D1F81C4DB8BC00140AE8 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					2FA3D20C1C4DB8BC00140AE8 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2FA3D1F81C4DB8BC00140AE8;
 					};
 				};
@@ -183,6 +188,7 @@
 			files = (
 				2FA3D2071C4DB8BC00140AE8 /* LaunchScreen.storyboard in Resources */,
 				2FA3D2041C4DB8BC00140AE8 /* Assets.xcassets in Resources */,
+				7FC1B5461D9D755E0080F05D /* KanaChart.plist in Resources */,
 				2FA3D2021C4DB8BC00140AE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -348,6 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -359,6 +367,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseConjugator.app/JapaneseConjugator";
 			};
 			name = Debug;
@@ -371,6 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseConjugator.app/JapaneseConjugator";
 			};
 			name = Release;
@@ -394,6 +404,7 @@
 				2FA3D2181C4DB8BC00140AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FA3D2191C4DB8BC00140AE8 /* Build configuration list for PBXNativeTarget "JapaneseConjugatorTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				2FA3D21B1C4DB8BC00140AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
