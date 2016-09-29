@@ -15,7 +15,7 @@
 		2FA3D2121C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */; };
 		2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
 		2FA3D21E1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
-		7FC1B5461D9D755E0080F05D /* KanaChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1B5451D9D755E0080F05D /* KanaChart.plist */; };
+		7FC1B5461D9D755E0080F05D /* GodanChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1B5451D9D755E0080F05D /* GodanChart.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseConjugatorTests.swift; sourceTree = "<group>"; };
 		2FA3D2131C4DB8BC00140AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbConjugator.swift; sourceTree = "<group>"; };
-		7FC1B5451D9D755E0080F05D /* KanaChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KanaChart.plist; sourceTree = "<group>"; };
+		7FC1B5451D9D755E0080F05D /* GodanChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GodanChart.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				2FA3D1FC1C4DB8BC00140AE8 /* AppDelegate.swift */,
 				2FA3D1FE1C4DB8BC00140AE8 /* ViewController.swift */,
 				2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */,
-				7FC1B5451D9D755E0080F05D /* KanaChart.plist */,
+				7FC1B5451D9D755E0080F05D /* GodanChart.plist */,
 				2FA3D2001C4DB8BC00140AE8 /* Main.storyboard */,
 				2FA3D2031C4DB8BC00140AE8 /* Assets.xcassets */,
 				2FA3D2051C4DB8BC00140AE8 /* LaunchScreen.storyboard */,
@@ -188,7 +188,7 @@
 			files = (
 				2FA3D2071C4DB8BC00140AE8 /* LaunchScreen.storyboard in Resources */,
 				2FA3D2041C4DB8BC00140AE8 /* Assets.xcassets in Resources */,
-				7FC1B5461D9D755E0080F05D /* KanaChart.plist in Resources */,
+				7FC1B5461D9D755E0080F05D /* GodanChart.plist in Resources */,
 				2FA3D2021C4DB8BC00140AE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

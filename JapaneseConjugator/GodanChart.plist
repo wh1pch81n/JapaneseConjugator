@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>あ</key>
+	<key>う</key>
 	<dict>
 		<key>a</key>
 		<string>あ</string>
@@ -15,7 +15,7 @@
 		<key>o</key>
 		<string>お</string>
 	</dict>
-	<key>か</key>
+	<key>く</key>
 	<dict>
 		<key>a</key>
 		<string>か</string>
@@ -28,7 +28,7 @@
 		<key>o</key>
 		<string>こ</string>
 	</dict>
-	<key>さ</key>
+	<key>す</key>
 	<dict>
 		<key>a</key>
 		<string>さ</string>
@@ -41,7 +41,7 @@
 		<key>o</key>
 		<string>そ</string>
 	</dict>
-	<key>た</key>
+	<key>つ</key>
 	<dict>
 		<key>a</key>
 		<string>た</string>
@@ -54,7 +54,7 @@
 		<key>o</key>
 		<string>と</string>
 	</dict>
-	<key>な</key>
+	<key>ぬ</key>
 	<dict>
 		<key>a</key>
 		<string>な</string>
@@ -67,7 +67,7 @@
 		<key>o</key>
 		<string>の</string>
 	</dict>
-	<key>は</key>
+	<key>ふ</key>
 	<dict>
 		<key>a</key>
 		<string>は</string>
@@ -80,7 +80,7 @@
 		<key>o</key>
 		<string>ほ</string>
 	</dict>
-	<key>ま</key>
+	<key>む</key>
 	<dict>
 		<key>a</key>
 		<string>ま</string>
@@ -93,7 +93,7 @@
 		<key>o</key>
 		<string>も</string>
 	</dict>
-	<key>や</key>
+	<key>ゆ</key>
 	<dict>
 		<key>a</key>
 		<string>や</string>
@@ -106,7 +106,7 @@
 		<key>o</key>
 		<string>よ</string>
 	</dict>
-	<key>ら</key>
+	<key>る</key>
 	<dict>
 		<key>a</key>
 		<string>ら</string>
@@ -119,20 +119,7 @@
 		<key>o</key>
 		<string>ろ</string>
 	</dict>
-	<key>わ</key>
-	<dict>
-		<key>a</key>
-		<string>わ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string></string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>を</string>
-	</dict>
-	<key>が</key>
+	<key>ぐ</key>
 	<dict>
 		<key>a</key>
 		<string>が</string>
@@ -145,7 +132,7 @@
 		<key>o</key>
 		<string>ご</string>
 	</dict>
-	<key>ざ</key>
+	<key>ず</key>
 	<dict>
 		<key>a</key>
 		<string>ざ</string>
@@ -158,7 +145,7 @@
 		<key>o</key>
 		<string>ぞ</string>
 	</dict>
-	<key>だ</key>
+	<key>づ</key>
 	<dict>
 		<key>a</key>
 		<string>だ</string>
@@ -171,7 +158,7 @@
 		<key>o</key>
 		<string>ど</string>
 	</dict>
-	<key>ば</key>
+	<key>ぶ</key>
 	<dict>
 		<key>a</key>
 		<string>ば</string>
@@ -184,7 +171,7 @@
 		<key>o</key>
 		<string>ぼ</string>
 	</dict>
-	<key>ぱ</key>
+	<key>ぷ</key>
 	<dict>
 		<key>a</key>
 		<string>ぱ</string>
@@ -196,123 +183,6 @@
 		<string>ぺ</string>
 		<key>o</key>
 		<string>ぽ</string>
-	</dict>
-	<key>きゃ</key>
-	<dict>
-		<key>a</key>
-		<string>きゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>きゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>きょ</string>
-	</dict>
-	<key>しゃ</key>
-	<dict>
-		<key>a</key>
-		<string>しゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>しゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>しょ</string>
-	</dict>
-	<key>ちゃ</key>
-	<dict>
-		<key>a</key>
-		<string>ちゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>ちゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>ちょ</string>
-	</dict>
-	<key>にゃ</key>
-	<dict>
-		<key>a</key>
-		<string>にゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>にゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>にょ</string>
-	</dict>
-	<key>ひゃ</key>
-	<dict>
-		<key>a</key>
-		<string>ひゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>ひゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>ひょ</string>
-	</dict>
-	<key>みゃ</key>
-	<dict>
-		<key>a</key>
-		<string>みゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>みゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>みょ</string>
-	</dict>
-	<key>りゃ</key>
-	<dict>
-		<key>a</key>
-		<string>りゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>りゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>りょ</string>
-	</dict>
-	<key>ぎゃ</key>
-	<dict>
-		<key>a</key>
-		<string>ぎゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>ぎゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>ぎょ</string>
-	</dict>
-	<key>じゃ</key>
-	<dict>
-		<key>a</key>
-		<string>じゃ</string>
-		<key>i</key>
-		<string></string>
-		<key>u</key>
-		<string>じゅ</string>
-		<key>e</key>
-		<string></string>
-		<key>o</key>
-		<string>じょ</string>
 	</dict>
 </dict>
 </plist>

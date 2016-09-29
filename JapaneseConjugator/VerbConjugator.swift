@@ -22,14 +22,11 @@ typealias Syllabaries = (
 	furigana: String
 )
 
-let table = [
-	"あ" : ["a":"あ", "i":"い", "u":"う", "e":"え", "o":"お"],
-	"か" : ["a":"か", "i":"き", "u":"く", "e":"け", "o":"こ"],
-	"さ" : ["a":"さ", "i":"し", "u":"す", "e":"せ", "o":"そ"],
-	"た" : ["a":"た", "i":"ち", "u":"つ", "e":"て", "o":"と"],
-	"よ" : ["a":"や", "o":"よ", "u":"ゆ"],
-	
-]
+func table(row: String, vowel: String) -> String {
+	let path = Bundle.main.path(forResource: "GodanChart", ofType: "plist")!
+	let d = NSDictionary(contentsOfFile: path)! as! Dictionary<String, Dictionary<String, String>>
+	return d[row]![vowel]!
+}
 
 func ==(lhs: JapaneseVerb, rhs: JapaneseVerb) -> Bool {
 	return lhs.kanji == rhs.kanji
@@ -64,8 +61,8 @@ struct JapaneseVerb: Verb, Hashable {
 		let suffix = "ない"
 		if (isGodan) {
 			return (
-				kanji: prefix + table[midfix]!["a"]! + suffix,
-				furigana: prefix2 + table[midfix2]!["a"]! + suffix
+				kanji: prefix + table(row: midfix, vowel: "a") + suffix,
+				furigana: prefix2 + table(row: midfix2, vowel: "a") + suffix
 			)
 		} else {
 			return (
@@ -81,8 +78,8 @@ struct JapaneseVerb: Verb, Hashable {
 		let suffix = "う"
 		if (isGodan) {
 			return (
-				kanji: prefix + table[midfix]!["o"]! + suffix,
-				furigana: prefix2 + table[midfix2]!["o"]! + suffix
+				kanji: prefix + table(row: midfix, vowel: "o") + suffix,
+				furigana: prefix2 + table(row: midfix2, vowel: "o") + suffix
 			)
 		} else {
 			let midfix = "よ"
