@@ -12,8 +12,8 @@ protocol ConjugatedVerb {
 }
 
 protocol Verb {
-	var kanji: String { get }
-	var furigana: String { get }
+	var kanji: VerbStrings { get }
+	var furigana: VerbStrings { get }
 	var isGodan: Bool { get }
 }
 
@@ -33,11 +33,25 @@ func ==(lhs: JapaneseVerb, rhs: JapaneseVerb) -> Bool {
 }
 
 struct JapaneseVerb: Verb, Hashable {
-	let kanji: String
-	let furigana: String
+	let kanji: VerbStrings
+	let furigana: VerbStrings
 	let isGodan: Bool
+	var meaning: String
+	var comments: String = ""
+	var example: String = ""
+	
+	init(kanji: VerbStrings, furigana: VerbStrings, meaning: String, isGodan: Bool) {
+		self.kanji = kanji
+		self.furigana = furigana
+		self.meaning = meaning
+		self.isGodan = isGodan
+	}
 	
 	var hashValue: Int { return kanji.hashValue }
+	
+	func splitLast(_ str: VerbStrings) -> (String, String) {
+		return splitLast(str.rawValue)
+	}
 	
 	func splitLast(_ str: String) -> (String, String) {
 		let k = str as NSString
@@ -50,8 +64,8 @@ struct JapaneseVerb: Verb, Hashable {
 	
 	func plain_Form() -> Syllabaries {
 		return (
-			kanji: kanji,
-			furigana: furigana
+			kanji: kanji.rawValue,
+			furigana: furigana.rawValue
 		)
 	}
 	
@@ -94,12 +108,12 @@ struct JapaneseVerb: Verb, Hashable {
 	func te_Form() -> Syllabaries {
 		let (prefix, midfix) = splitLast(self.kanji)
 		let (prefix2, _) = splitLast(self.furigana)
-		if self.furigana == "いく" {
+		if case VerbStrings.いく = self.furigana {
 			return (
 				kanji: "行って",
 				furigana: "いって"
 			)
-		} else if (self.furigana == "する") {
+		} else if case VerbStrings.する = self.furigana {
 			return (
 				kanji: "して",
 				furigana: "して"
@@ -138,12 +152,12 @@ struct JapaneseVerb: Verb, Hashable {
 	func ta_Form() -> Syllabaries {
 		let (prefix, midfix) = splitLast(self.kanji)
 		let (prefix2, _) = splitLast(self.furigana)
-		if self.furigana == "いく" {
+		if self.furigana == .いく {
 			return (
 				kanji: "行った",
 				furigana: "いった"
 			)
-		} else if (self.furigana == "する") {
+		} else if (self.furigana == .する) {
 			return (
 				kanji: "した",
 				furigana: "した"
@@ -179,6 +193,7 @@ struct JapaneseVerb: Verb, Hashable {
 	}
 	
 	/// below not done yet
+	/*
 	func polite_Form() -> Syllabaries {
 		if (isGodan) {
 			return (
@@ -220,5 +235,5 @@ struct JapaneseVerb: Verb, Hashable {
 			)
 		}
 	}
-
+*/
 }

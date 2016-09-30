@@ -15,7 +15,9 @@
 		2FA3D2121C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */; };
 		2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
 		2FA3D21E1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
+		7F02D1981D9ED862008AF59A /* SentenceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D1971D9ED862008AF59A /* SentenceList.swift */; };
 		7FC1B5461D9D755E0080F05D /* GodanChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1B5451D9D755E0080F05D /* GodanChart.plist */; };
+		7FC1B5481D9ED5FB0080F05D /* VerbList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1B5471D9ED5FB0080F05D /* VerbList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,9 @@
 		2FA3D2111C4DB8BC00140AE8 /* JapaneseConjugatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseConjugatorTests.swift; sourceTree = "<group>"; };
 		2FA3D2131C4DB8BC00140AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbConjugator.swift; sourceTree = "<group>"; };
+		7F02D1971D9ED862008AF59A /* SentenceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceList.swift; sourceTree = "<group>"; };
 		7FC1B5451D9D755E0080F05D /* GodanChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GodanChart.plist; sourceTree = "<group>"; };
+		7FC1B5471D9ED5FB0080F05D /* VerbList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				2FA3D1FC1C4DB8BC00140AE8 /* AppDelegate.swift */,
 				2FA3D1FE1C4DB8BC00140AE8 /* ViewController.swift */,
 				2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */,
+				7FC1B5471D9ED5FB0080F05D /* VerbList.swift */,
+				7F02D1971D9ED862008AF59A /* SentenceList.swift */,
 				7FC1B5451D9D755E0080F05D /* GodanChart.plist */,
 				2FA3D2001C4DB8BC00140AE8 /* Main.storyboard */,
 				2FA3D2031C4DB8BC00140AE8 /* Assets.xcassets */,
@@ -148,11 +154,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Derrick  Ho";
 				TargetAttributes = {
 					2FA3D1F81C4DB8BC00140AE8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SX585CK9M9;
 						LastSwiftMigration = 0800;
 					};
 					2FA3D20C1C4DB8BC00140AE8 = {
@@ -207,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC1B5481D9ED5FB0080F05D /* VerbList.swift in Sources */,
+				7F02D1981D9ED862008AF59A /* SentenceList.swift in Sources */,
 				2FA3D1FF1C4DB8BC00140AE8 /* ViewController.swift in Sources */,
 				2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */,
 				2FA3D1FD1C4DB8BC00140AE8 /* AppDelegate.swift in Sources */,
@@ -265,8 +274,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -310,8 +321,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -330,6 +343,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -339,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SX585CK9M9;
 				INFOPLIST_FILE = JapaneseConjugator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugator;
@@ -351,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SX585CK9M9;
 				INFOPLIST_FILE = JapaneseConjugator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dnthome.JapaneseConjugator;
