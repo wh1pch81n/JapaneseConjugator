@@ -9,6 +9,18 @@
 import UIKit
 import AVKit
 
+protocol Withable {}
+extension Withable {
+	mutating func with(bootstrap: (_ obj: inout Self) -> ()) -> Self {
+		bootstrap(&self)
+		return self
+	}
+}
+
+
+extension NSObject: Withable {}
+//extension JapaneseVerb: Withable {}
+
 /**
 Type of games
 1) Pronounciation:  read the japanese.  You will be judge on accuracy and speed.  It will be written in kanji or hirigana.  This will help you read faster.
@@ -36,9 +48,9 @@ class ViewController: UIViewController {
 	}
 	
 	func setUpQuestion(index: Int = 0) {
-		let obj = verbList[index % verbList.count]
-		label.text = obj.kanji.rawValue
-		userInputTextView.text = nil
+		//let obj = verbList[index % verbList.count]
+		//label.text = obj.kanji.rawValue
+		//userInputTextView.text = nil
 		
 	}
 	

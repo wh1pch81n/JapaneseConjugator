@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 protocol ConjugatedVerb {
 }
 
@@ -21,17 +21,17 @@ typealias Syllabaries = (
 	kanji: String,
 	furigana: String
 )
-
+*/
 func table(row: String, vowel: String) -> String {
 	let path = Bundle.main.path(forResource: "GodanChart", ofType: "plist")!
 	let d = NSDictionary(contentsOfFile: path)! as! Dictionary<String, Dictionary<String, String>>
 	return d[row]![vowel]!
 }
 
-func ==(lhs: JapaneseVerb, rhs: JapaneseVerb) -> Bool {
-	return lhs.kanji == rhs.kanji
-}
-
+//func ==(lhs: JapaneseVerb, rhs: JapaneseVerb) -> Bool {
+//	return lhs.kanji == rhs.kanji
+//}
+/*
 struct JapaneseVerb: Verb, Hashable {
 	let kanji: VerbStrings
 	let furigana: VerbStrings
@@ -191,7 +191,7 @@ struct JapaneseVerb: Verb, Hashable {
 			)
 		}
 	}
-	
+*/
 	/// below not done yet
 	/*
 	func polite_Form() -> Syllabaries {
@@ -236,4 +236,4 @@ struct JapaneseVerb: Verb, Hashable {
 		}
 	}
 */
-}
+//}

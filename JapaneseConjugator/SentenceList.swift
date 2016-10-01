@@ -28,64 +28,23 @@ class JapaneseSentence {
 	}
 }
 
-class JapaneseNoun {
-	let japanese: NounString
-	let meaning: String
-	init(japanese: NounString, meaning: String) {
-		self.japanese = japanese
-		self.meaning = meaning
+let sentenceList: [JapaneseSentence] = [
+]
+
+extension SentenceString {
+	var english: String {
+		switch self {
+		case .あそこにぜいかんのひとがいます:
+			return "There is a customs officer (person) over there"
+		case .ジョンさんはパスポートをみせる:
+			return "John shows his passport"
+		case .パスポートをみせてください:
+			return "Please show (me) (your) passport"
+		case .ジョンさんはぜいかんのひとにパスポートをみせた:
+			return "John showed his passport to the Customs Person (Customs Officer)"
+		case .なんばん:
+			return "Which number?"
+		}
 	}
 }
-
-class JapaneseProperNoun: JapaneseNoun {
-	
-}
-
-enum SentenceString: String {
-	case あそこにぜいかんのひとがいます
-	case ジョンさんはパスポートをみせる
-	case パスポートをみせてください
-	case ジョンさんはぜいかんのひとにパスポートをみせた
-}
-
-
-let sentenceList: [JapaneseSentence] = [
-	JapaneseSentence(japanese: .パスポートをみせてください, meaning: "Please show me your passport"),
-	JapaneseSentence(japanese: .あそこにぜいかんのひとがいます, meaning: "There is a customs officer (\"person\") over there"),
-	JapaneseSentence(japanese: .ジョンさんはパスポートをみせる, meaning: "John shows his passport"),
-]
-
-enum NounString: String {
-	case くうこう
-	case なりたくうこう
-	case ひこうき
-	case ターミナル
-	case ゲート
-	case パスポート
-	case ぜいかん
-	case がいこくじん
-	case がいじん
-	case ばんごう
-	case _ばん
-	case なんばん
-}
-
-let properNounList: [JapaneseProperNoun] = [
-	JapaneseProperNoun(japanese: .なりたくうこう, meaning: "Narita Airport"),
-	JapaneseProperNoun(japanese: .ぜいかん, meaning: "Customs"),
-
-]
-
-let nounList: [JapaneseNoun] = [
-	JapaneseNoun(japanese: .なんばん, meaning: "Which number"),
-	JapaneseNoun(japanese: ._ばん, meaning: "Number suffix"),
-	JapaneseNoun(japanese: .ばんごう, meaning: "Number"),
-	JapaneseNoun(japanese: .がいこくじん, meaning: "Foreigner"),
-	JapaneseNoun(japanese: .がいじん, meaning: "Outsider, foreigner"),
-	JapaneseNoun(japanese: .くうこう, meaning: "Airport"),
-	JapaneseNoun(japanese: .ひこうき, meaning: "Airplane"),
-	JapaneseNoun(japanese: .ターミナル, meaning: "Terminal"),
-	JapaneseNoun(japanese: .ゲート, meaning: "gate"),
-	JapaneseNoun(japanese: .パスポート, meaning: "passport"),
-]
 

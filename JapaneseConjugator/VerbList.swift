@@ -8,32 +8,51 @@
 
 import Foundation
 
-protocol Withable {}
-extension Withable {
-	mutating func with(bootstrap: (_ obj: inout Self) -> ()) -> Self {
-		bootstrap(&self)
-		return self
+//let verbList: [JapaneseVerb] = [
+//	JapaneseVerb(kanji: .食べる, furigana: .たべる, meaning: "to eat", isGodan: false)
+//]
+
+extension IrregularVerbStrings {
+	var english: String {
+		switch self {
+		case .いく, .行く:
+			return "to go"
+		case .する:
+			return "to do; to interact"
+		}
 	}
 }
 
-
-extension NSObject: Withable {}
-extension JapaneseVerb: Withable {}
-
-enum VerbStrings: String {
-	case いる
-	case いく
-	case する
-	case 見る, みる
-	case 見せる, みせる
-	case 食べる, たべる
-	case 出る, でる
-	case うける
-	case きる
-	case はめる
-	case はれる
+extension VariableVerbStrings {
+	var english: String {
+		switch self {
+		case .かく:
+			return "to write"
+		}
+	}
 }
 
-let verbList: [JapaneseVerb] = [
-	JapaneseVerb(kanji: .食べる, furigana: .たべる, meaning: "to eat", isGodan: false)
-]
+extension RegularVerbStrings {
+	var english: String {
+		switch self {
+		case .いる:
+			return "to exist (animates)"
+		case .見る, .みる:
+			return "to see"
+		case .見せる, .みせる:
+			return "to show"
+		case .食べる, .たべる:
+			return "to eat"
+		case .出る, .でる:
+			return "to come out; to leave"
+		case .うける:
+			return "to recieve"
+		case .きる:
+			return "to wear"
+		case .はめる:
+			return "to put on by wrapping around (like a belt)"
+		case .はれる:
+			return "to clear up (i.e. the weather cleared up)"
+		}
+	}
+}

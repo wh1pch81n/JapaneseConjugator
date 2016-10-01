@@ -16,6 +16,12 @@
 		2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
 		2FA3D21E1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */; };
 		7F02D1981D9ED862008AF59A /* SentenceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D1971D9ED862008AF59A /* SentenceList.swift */; };
+		7F02D19A1D9F4384008AF59A /* SentenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D1991D9F4384008AF59A /* SentenceString.swift */; };
+		7F02D19C1D9F43A6008AF59A /* VerbString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D19B1D9F43A6008AF59A /* VerbString.swift */; };
+		7F02D19E1D9F43D3008AF59A /* NounString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D19D1D9F43D3008AF59A /* NounString.swift */; };
+		7F02D1A01D9F43F7008AF59A /* NounList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D19F1D9F43F7008AF59A /* NounList.swift */; };
+		7F02D1A21D9F47FA008AF59A /* SuffixList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D1A11D9F47FA008AF59A /* SuffixList.swift */; };
+		7F02D1A41D9F480A008AF59A /* SuffixString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02D1A31D9F480A008AF59A /* SuffixString.swift */; };
 		7FC1B5461D9D755E0080F05D /* GodanChart.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1B5451D9D755E0080F05D /* GodanChart.plist */; };
 		7FC1B5481D9ED5FB0080F05D /* VerbList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1B5471D9ED5FB0080F05D /* VerbList.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +49,12 @@
 		2FA3D2131C4DB8BC00140AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbConjugator.swift; sourceTree = "<group>"; };
 		7F02D1971D9ED862008AF59A /* SentenceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceList.swift; sourceTree = "<group>"; };
+		7F02D1991D9F4384008AF59A /* SentenceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceString.swift; sourceTree = "<group>"; };
+		7F02D19B1D9F43A6008AF59A /* VerbString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbString.swift; sourceTree = "<group>"; };
+		7F02D19D1D9F43D3008AF59A /* NounString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NounString.swift; sourceTree = "<group>"; };
+		7F02D19F1D9F43F7008AF59A /* NounList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NounList.swift; sourceTree = "<group>"; };
+		7F02D1A11D9F47FA008AF59A /* SuffixList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixList.swift; sourceTree = "<group>"; };
+		7F02D1A31D9F480A008AF59A /* SuffixString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuffixString.swift; sourceTree = "<group>"; };
 		7FC1B5451D9D755E0080F05D /* GodanChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GodanChart.plist; sourceTree = "<group>"; };
 		7FC1B5471D9ED5FB0080F05D /* VerbList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +102,13 @@
 				2FA3D1FE1C4DB8BC00140AE8 /* ViewController.swift */,
 				2FA3D21C1C4DBA5C00140AE8 /* VerbConjugator.swift */,
 				7FC1B5471D9ED5FB0080F05D /* VerbList.swift */,
+				7F02D19B1D9F43A6008AF59A /* VerbString.swift */,
+				7F02D19D1D9F43D3008AF59A /* NounString.swift */,
+				7F02D19F1D9F43F7008AF59A /* NounList.swift */,
 				7F02D1971D9ED862008AF59A /* SentenceList.swift */,
+				7F02D1991D9F4384008AF59A /* SentenceString.swift */,
+				7F02D1A11D9F47FA008AF59A /* SuffixList.swift */,
+				7F02D1A31D9F480A008AF59A /* SuffixString.swift */,
 				7FC1B5451D9D755E0080F05D /* GodanChart.plist */,
 				2FA3D2001C4DB8BC00140AE8 /* Main.storyboard */,
 				2FA3D2031C4DB8BC00140AE8 /* Assets.xcassets */,
@@ -216,7 +234,13 @@
 			files = (
 				7FC1B5481D9ED5FB0080F05D /* VerbList.swift in Sources */,
 				7F02D1981D9ED862008AF59A /* SentenceList.swift in Sources */,
+				7F02D1A21D9F47FA008AF59A /* SuffixList.swift in Sources */,
+				7F02D19E1D9F43D3008AF59A /* NounString.swift in Sources */,
+				7F02D19C1D9F43A6008AF59A /* VerbString.swift in Sources */,
 				2FA3D1FF1C4DB8BC00140AE8 /* ViewController.swift in Sources */,
+				7F02D19A1D9F4384008AF59A /* SentenceString.swift in Sources */,
+				7F02D1A41D9F480A008AF59A /* SuffixString.swift in Sources */,
+				7F02D1A01D9F43F7008AF59A /* NounList.swift in Sources */,
 				2FA3D21D1C4DBA5C00140AE8 /* VerbConjugator.swift in Sources */,
 				2FA3D1FD1C4DB8BC00140AE8 /* AppDelegate.swift in Sources */,
 			);
